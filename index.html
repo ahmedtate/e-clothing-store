@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing E-Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            padding: 2em;
+        }
+        .category {
+            margin-bottom: 2em;
+        }
+        .category img {
+            max-width: 100%;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Clothing E-Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#kids">Kids</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="men" class="category">
+            <h2>Men's Clothing</h2>
+            <img src="men-clothing.jpg" alt="Men's Clothing">
+            <p>Explore our latest collection of men's clothing.</p>
+        </div>
+        <div id="women" class="category">
+            <h2>Women's Clothing</h2>
+            <img src="women-clothing.jpg" alt="Women's Clothing">
+            <p>Discover the newest trends in women's fashion.</p>
+        </div>
+        <div id="kids" class="category">
+            <h2>Kids' Clothing</h2>
+            <img src="kids-clothing.jpg" alt="Kids' Clothing">
+            <p>Find stylish and comfortable outfits for kids.</p>
+        </div>
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Clothing E-Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
